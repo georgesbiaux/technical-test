@@ -21,6 +21,7 @@ const StyledTrackItem = styled.div`
 
   .track-row {
     flex: 1;
+    padding-top: 8px;
   }
 `;
 

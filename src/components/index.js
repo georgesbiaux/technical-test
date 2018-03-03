@@ -7,3 +7,5 @@ export { default as TrackList } from './TrackList';
 export { default as TrackItem } from './TrackItem';
 export { default as TrackItemFooter } from './TrackItemFooter';
 export { default as TrackItemUserIcon } from './TrackItemUserIcon';
+export { default as TrackItemInfo } from './TrackItemInfo';
+export { default as TrackItemCover } from './TrackItemCover';
