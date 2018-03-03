@@ -1,2 +1,6 @@
 {
+  "trackItem": {
+    "addedBy": "Ajouté par {username}",
+    "in": "dans {duration} min"
+  }
 }

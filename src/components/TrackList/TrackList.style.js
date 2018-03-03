@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 const StyledTrackList = styled.div`
-  font-size: large;
+  overflow: auto;
+  border-radius: 5px;
 `;
 
 export default StyledTrackList;
