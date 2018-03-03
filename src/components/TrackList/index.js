@@ -1,1 +1,1 @@
-export { default } from './TrackList.container';
+export { default } from './TrackList.component';

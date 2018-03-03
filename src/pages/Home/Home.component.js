@@ -6,7 +6,7 @@ export default class Home extends Component {
   render() {
     return (
       <StyledHome>
-        <TrackList />
+        <TrackList trackList={this.props.trackList} />
       </StyledHome>
     );
   };

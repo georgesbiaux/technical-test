@@ -6,9 +6,11 @@ import TrackList from './TrackList.component';
 describe('<TrackList>', () => {
   it('should render correctly', () => {
     const props = {
-      children: <div>
-        <span>test</span>
-      </div>
+      trackList: [{
+        id: 1,
+      }, {
+        id: 2,
+      }],
     };
     const tree = shallow(<TrackList {...props} />);
     expect(toJSON(tree)).toMatchSnapshot();

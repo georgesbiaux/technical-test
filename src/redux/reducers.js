@@ -5,6 +5,7 @@
  */
 
 import { combineReducers } from 'redux';
+import trackList from './TrackList/reducer';
 
 /**
  * Creates the main reducer with the asynchronously loaded ones
@@ -12,5 +13,6 @@ import { combineReducers } from 'redux';
 export default function createReducer(asyncReducers) {
   return combineReducers({
     ...asyncReducers,
+    trackList,
   });
 }

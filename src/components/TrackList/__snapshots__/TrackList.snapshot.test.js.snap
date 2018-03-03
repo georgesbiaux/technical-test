@@ -3,5 +3,16 @@
 exports[`<TrackList> should render correctly 1`] = `
 <styled.div
   className="track-list"
-/>
+>
+  <div
+    key="1"
+  >
+    1
+  </div>
+  <div
+    key="2"
+  >
+    2
+  </div>
+</styled.div>
 `;
