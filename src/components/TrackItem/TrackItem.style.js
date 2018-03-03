@@ -5,6 +5,7 @@ const StyledTrackItem = styled.div`
   border-bottom: 1px solid #eeeeee;
   display: flex;
   flex-direction: row;
+  position: relative;
 
   .user-icon {
     height: 60px;

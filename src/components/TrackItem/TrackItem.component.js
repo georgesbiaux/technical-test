@@ -1,5 +1,10 @@
 import React from 'react';
-import { TrackItemFooter, TrackItemUserIcon, TrackItemInfo } from 'components';
+import {
+  TrackItemFooter,
+  TrackItemUserIcon,
+  TrackItemInfo,
+  TrackItemPriorityOverlay,
+} from 'components';
 import StyledTrackItem from './TrackItem.style';
 
 const TrackItem = props => (
@@ -11,6 +16,7 @@ const TrackItem = props => (
       </div>
       <TrackItemFooter track={props.track} />
     </div>
+    {props.track.priority && <TrackItemPriorityOverlay />}
   </StyledTrackItem>
 );
 

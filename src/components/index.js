@@ -9,3 +9,6 @@ export { default as TrackItemFooter } from './TrackItemFooter';
 export { default as TrackItemUserIcon } from './TrackItemUserIcon';
 export { default as TrackItemInfo } from './TrackItemInfo';
 export { default as TrackItemCover } from './TrackItemCover';
+export {
+  default as TrackItemPriorityOverlay,
+} from './TrackItemPriorityOverlay';
