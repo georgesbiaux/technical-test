@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TrackItem> should render correctly when priority is false 1`] = `
+<styled.div
+  className="track-item"
+>
+  <styled.div
+    pictureUrl="https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd"
+  />
+  <div
+    className="track-container"
+  >
+    <div
+      className="track-row"
+    >
+      <TrackItemInfo
+        track={
+          Object {
+            "adder": Object {
+              "id": 1,
+              "name": "kant",
+              "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+            },
+            "artist": "The Rolling Stones",
+            "duration": 211,
+            "id": 1,
+            "name": "Beast Of Burden",
+            "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+            "priority": false,
+            "votes": Object {
+              "count": 0,
+              "userVoted": false,
+            },
+          }
+        }
+      />
+      <TrackItemButtons
+        track={
+          Object {
+            "adder": Object {
+              "id": 1,
+              "name": "kant",
+              "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+            },
+            "artist": "The Rolling Stones",
+            "duration": 211,
+            "id": 1,
+            "name": "Beast Of Burden",
+            "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+            "priority": false,
+            "votes": Object {
+              "count": 0,
+              "userVoted": false,
+            },
+          }
+        }
+      />
+    </div>
+    <TrackItemFooter
+      track={
+        Object {
+          "adder": Object {
+            "id": 1,
+            "name": "kant",
+            "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+          },
+          "artist": "The Rolling Stones",
+          "duration": 211,
+          "id": 1,
+          "name": "Beast Of Burden",
+          "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+          "priority": false,
+          "votes": Object {
+            "count": 0,
+            "userVoted": false,
+          },
+        }
+      }
+    />
+  </div>
+</styled.div>
+`;
+
+exports[`<TrackItem> should render correctly when priority is true 1`] = `
+<styled.div
+  className="track-item"
+>
+  <styled.div
+    pictureUrl="https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd"
+  />
+  <div
+    className="track-container"
+  >
+    <div
+      className="track-row"
+    >
+      <TrackItemInfo
+        track={
+          Object {
+            "adder": Object {
+              "id": 1,
+              "name": "kant",
+              "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+            },
+            "artist": "The Rolling Stones",
+            "duration": 211,
+            "id": 1,
+            "name": "Beast Of Burden",
+            "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+            "priority": true,
+            "votes": Object {
+              "count": 0,
+              "userVoted": false,
+            },
+          }
+        }
+      />
+      <TrackItemButtons
+        track={
+          Object {
+            "adder": Object {
+              "id": 1,
+              "name": "kant",
+              "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+            },
+            "artist": "The Rolling Stones",
+            "duration": 211,
+            "id": 1,
+            "name": "Beast Of Burden",
+            "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+            "priority": true,
+            "votes": Object {
+              "count": 0,
+              "userVoted": false,
+            },
+          }
+        }
+      />
+    </div>
+    <TrackItemFooter
+      track={
+        Object {
+          "adder": Object {
+            "id": 1,
+            "name": "kant",
+            "pictureUrl": "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd",
+          },
+          "artist": "The Rolling Stones",
+          "duration": 211,
+          "id": 1,
+          "name": "Beast Of Burden",
+          "pictureUrl": "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+          "priority": true,
+          "votes": Object {
+            "count": 0,
+            "userVoted": false,
+          },
+        }
+      }
+    />
+  </div>
+  <TrackItemPriorityOverlay />
+</styled.div>
+`;

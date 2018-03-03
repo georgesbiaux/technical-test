@@ -8,7 +8,7 @@ const initialState = fromJS({
       id: 1,
       name: 'Beast Of Burden',
       duration: 211,
-      priority: true,
+      priority: false,
       artist: 'The Rolling Stones',
       adder: {
         id: 1,

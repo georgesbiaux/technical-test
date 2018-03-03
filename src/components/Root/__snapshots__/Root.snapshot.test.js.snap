@@ -3,7 +3,12 @@
 exports[`<Root> should render correctly 1`] = `
 <IntlProvider
   locale="fr"
-  messages={Object {}}
+  messages={
+    Object {
+      "trackItem.addedBy": "Ajouté par {username}",
+      "trackItem.in": "dans {duration} min",
+    }
+  }
 >
   <styled.div>
     <div>

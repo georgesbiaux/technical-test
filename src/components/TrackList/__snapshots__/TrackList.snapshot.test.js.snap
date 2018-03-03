@@ -4,15 +4,21 @@ exports[`<TrackList> should render correctly 1`] = `
 <styled.div
   className="track-list"
 >
-  <div
+  <TrackItem
     key="1"
-  >
-    1
-  </div>
-  <div
+    track={
+      Object {
+        "id": 1,
+      }
+    }
+  />
+  <TrackItem
     key="2"
-  >
-    2
-  </div>
+    track={
+      Object {
+        "id": 2,
+      }
+    }
+  />
 </styled.div>
 `;

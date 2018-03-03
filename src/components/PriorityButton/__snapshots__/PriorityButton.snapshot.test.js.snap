@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PriorityButton> should render correctly when priority is false 1`] = `
+<button
+  class="priority-button sc-bdVaJa kWSmXR"
+>
+  <i
+    class="fa fa-bars"
+  >
+    
+  </i>
+</button>
+`;
+
+exports[`<PriorityButton> should render correctly when priority is true 1`] = `
+<button
+  class="priority-button sc-bdVaJa brwQhq"
+>
+  <i
+    class="fa fa-bars"
+  >
+    
+  </i>
+</button>
+`;

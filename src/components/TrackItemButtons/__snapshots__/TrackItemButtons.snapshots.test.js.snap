@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TrackItemButtons> should render correctly 1`] = `
+<div
+  class="track-item-button sc-iwsKbI gzeYkZ"
+>
+  <button
+    class="priority-button sc-htoDjs esxIvP"
+  >
+    <i
+      class="fa fa-bars"
+    >
+      
+    </i>
+  </button>
+  <button
+    class="vote-button sc-dnqmqq kTAFid"
+  >
+    0
+    <i
+      class="fa fa-heart"
+    >
+      
+    </i>
+  </button>
+</div>
+`;

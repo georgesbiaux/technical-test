@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TrackItemInfo> should render correctly 1`] = `
+<div
+  class="track-info sc-iwsKbI ecisHD"
+>
+  <div
+    class="sc-EHOje bMqQgi"
+  >
+    
+  </div>
+  <div
+    class="track-name-and-artist"
+  >
+    <div
+      class="track-name"
+    >
+      Beast Of Burden
+    </div>
+    <div
+      class="track-artist"
+    >
+      The Rolling Stones
+    </div>
+  </div>
+</div>
+`;

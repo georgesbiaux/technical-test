@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<VoteButton> should render correctly when userVoted is false 1`] = `
+<button
+  class="vote-button sc-bdVaJa QUdHO"
+>
+  0
+  <i
+    class="fa fa-heart"
+  >
+    
+  </i>
+</button>
+`;
+
+exports[`<VoteButton> should render correctly when userVoted is true 1`] = `
+<button
+  class="vote-button sc-bdVaJa fMBtmC"
+>
+  3
+  <i
+    class="fa fa-heart"
+  >
+    
+  </i>
+</button>
+`;
