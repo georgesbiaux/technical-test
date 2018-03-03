@@ -2,7 +2,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "analyze": "source-map-explorer build/static/js/main.*",
     "flow": "flow",
@@ -10,8 +10,7 @@
     "generate": "plop --plopfile scripts/generators/index.js",
     "lint": "eslint --ext .jsx,.js -c .eslintrc src",
     "lint:fix": "eslint --fix --ext .jsx,.js -c .eslintrc src",
-    "nsp": "nsp check",
-    "test:coverage": "npm run test -- --coverage"
+    "nsp": "nsp check"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -19,8 +18,10 @@
       "!src/**/*.test.js",
       "!src/**/index.js",
       "!src/**/*.container.js",
+      "!src/services/i18n/**/*.js",
       "!src/index.js",
       "!src/tempPolyfills.js",
+      "!src/registerServiceWorker.js",
       "!src/setupTests.js",
       "!src/redux/reducers.js",
       "!src/redux/sagas.js",
