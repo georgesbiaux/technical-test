@@ -1,0 +1,26 @@
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import StyledTrackItemFooter from './TrackItemFooter.style';
+
+const TrackItemFooter = props => (
+  <StyledTrackItemFooter className="track-footer">
+    <div className="added-by">
+      {props.track.adder && <FormattedMessage
+        id="trackItem.addedBy"
+        values={{
+          username: props.track.adder.name,
+        }}
+      />}
+    </div>
+    <div className="time-before-play">
+      <FormattedMessage
+        id="trackItem.in"
+        values={{
+          duration: 4,
+        }}
+      />
+    </div>
+  </StyledTrackItemFooter>
+);
+
+export default TrackItemFooter;

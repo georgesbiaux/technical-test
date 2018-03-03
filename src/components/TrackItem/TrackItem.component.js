@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
+import { TrackItemFooter } from 'components';
 import StyledTrackItem from './TrackItem.style';
 import UserIcon from './user-icon.png';
 
@@ -15,24 +16,7 @@ const TrackItem = props => (
     <div className="track-container">
       <div className="track-row">
       </div>
-      <div className="track-footer">
-        <div className="added-by">
-          {props.track.adder && <FormattedMessage
-            id="trackItem.addedBy"
-            values={{
-              username: props.track.adder.name,
-            }}
-          />}
-        </div>
-        <div className="time-before-play">
-          <FormattedMessage
-            id="trackItem.in"
-            values={{
-              duration: 4,
-            }}
-          />
-        </div>
-      </div>
+      <TrackItemFooter track={props.track} />
     </div>
   </StyledTrackItem>
 );
