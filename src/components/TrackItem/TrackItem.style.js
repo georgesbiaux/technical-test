@@ -23,6 +23,15 @@ const StyledTrackItem = styled.div`
   .track-row {
     flex: 1;
     padding-top: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .track-item-button {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 `;
 

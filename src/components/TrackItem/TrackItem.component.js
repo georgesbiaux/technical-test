@@ -4,6 +4,7 @@ import {
   TrackItemUserIcon,
   TrackItemInfo,
   TrackItemPriorityOverlay,
+  TrackItemButtons,
 } from 'components';
 import StyledTrackItem from './TrackItem.style';
 
@@ -13,6 +14,7 @@ const TrackItem = props => (
     <div className="track-container">
       <div className="track-row">
         <TrackItemInfo track={props.track} />
+        <TrackItemButtons track={props.track} />
       </div>
       <TrackItemFooter track={props.track} />
     </div>

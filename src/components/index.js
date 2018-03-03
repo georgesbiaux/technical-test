@@ -12,3 +12,5 @@ export { default as TrackItemCover } from './TrackItemCover';
 export {
   default as TrackItemPriorityOverlay,
 } from './TrackItemPriorityOverlay';
+export { default as PriorityButton } from './PriorityButton';
+export { default as TrackItemButtons } from './TrackItemButtons';
