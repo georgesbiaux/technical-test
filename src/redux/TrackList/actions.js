@@ -2,6 +2,7 @@ import {
   TOGGLE_TRACK_PRIORITY,
   TOGGLE_USER_VOTE,
   ADD_TRACK,
+  REMOVE_TRACK,
 } from './constants';
 
 export function toggleTrackPriority(trackId) {
@@ -22,5 +23,12 @@ export function addTrack(track) {
   return {
     type: ADD_TRACK,
     track,
+  };
+}
+
+export function removeTrack(trackId) {
+  return {
+    type: REMOVE_TRACK,
+    trackId,
   };
 }

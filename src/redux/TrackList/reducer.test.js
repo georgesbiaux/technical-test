@@ -4,16 +4,19 @@ import {
   TOGGLE_TRACK_PRIORITY,
   TOGGLE_USER_VOTE,
   ADD_TRACK,
+  REMOVE_TRACK,
 } from './constants';
 
 describe('track list Reducer', () => {
   let previousState;
   beforeEach(() => {
     previousState = fromJS({
-      tracks: [{
-        id: 1,
-        votes: {},
-      }],
+      tracks: [
+        {
+          id: 1,
+          votes: {},
+        },
+      ],
     });
   });
 
@@ -31,6 +34,19 @@ describe('track list Reducer', () => {
     );
   });
 
+  it('should remove track and sort track list', () => {
+    expect(
+      trackListReducer(previousState, {
+        type: REMOVE_TRACK,
+        trackId: 1,
+      }),
+    ).toEqual(
+      fromJS({
+        tracks: [],
+      }),
+    );
+  });
+
   it('should add track and sort track list', () => {
     expect(
       trackListReducer(previousState, {
@@ -42,13 +58,16 @@ describe('track list Reducer', () => {
       }),
     ).toEqual(
       fromJS({
-        tracks: [{
-          id: 1,
-          votes: {},
-        }, {
-          id: 2,
-          votes: {},
-        }],
+        tracks: [
+          {
+            id: 1,
+            votes: {},
+          },
+          {
+            id: 2,
+            votes: {},
+          },
+        ],
       }),
     );
 
@@ -62,13 +81,16 @@ describe('track list Reducer', () => {
       }),
     ).toEqual(
       fromJS({
-        tracks: [{
-          id: 0,
-          votes: {},
-        }, {
-          id: 1,
-          votes: {},
-        }],
+        tracks: [
+          {
+            id: 0,
+            votes: {},
+          },
+          {
+            id: 1,
+            votes: {},
+          },
+        ],
       }),
     );
 
@@ -82,16 +104,18 @@ describe('track list Reducer', () => {
       }),
     ).toEqual(
       fromJS({
-        tracks: [{
-          id: 1,
-          votes: {},
-        }, {
-          id: 1,
-          votes: {},
-        }],
+        tracks: [
+          {
+            id: 1,
+            votes: {},
+          },
+          {
+            id: 1,
+            votes: {},
+          },
+        ],
       }),
     );
-
   });
 
   it('should toggle track priority and reorder track list', () => {

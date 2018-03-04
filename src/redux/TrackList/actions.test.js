@@ -2,8 +2,14 @@ import {
   TOGGLE_TRACK_PRIORITY,
   TOGGLE_USER_VOTE,
   ADD_TRACK,
+  REMOVE_TRACK,
 } from './constants';
-import { toggleTrackPriority, toggleUserVote, addTrack } from './actions';
+import {
+  toggleTrackPriority,
+  toggleUserVote,
+  addTrack,
+  removeTrack,
+} from './actions';
 
 describe('TrackList actions', () => {
   describe('toggleTrackPriority', () => {
@@ -36,6 +42,17 @@ describe('TrackList actions', () => {
       };
 
       expect(addTrack({ id: 42 })).toEqual(expectedResult);
+    });
+  });
+
+  describe('removeTrack', () => {
+    it('should return the correct type and payload', () => {
+      const expectedResult = {
+        type: REMOVE_TRACK,
+        trackId: 42,
+      };
+
+      expect(removeTrack(42)).toEqual(expectedResult);
     });
   });
 });

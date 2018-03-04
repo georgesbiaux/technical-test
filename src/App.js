@@ -1,12 +1,12 @@
 // @flow
-import React from "react";
-import { Provider } from "react-redux";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Routes from "./routes";
-import { Root } from "./components";
+import React from 'react';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Routes from './routes';
+import { Root } from './components';
 
 type Props = {
-  store: Store
+  store: Store,
 };
 
 const RootComponentWithRoutes = () => (

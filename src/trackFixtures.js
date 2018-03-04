@@ -1,42 +1,42 @@
 const trackList = [
   {
     id: 1,
-    name: "Beast Of Burden",
+    name: 'Beast Of Burden',
     duration: 211,
     priority: false,
-    artist: "The Rolling Stones",
+    artist: 'The Rolling Stones',
     adder: {
       id: 1,
-      name: "kant",
+      name: 'kant',
       pictureUrl:
-        "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd"
+        'https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd',
     },
     pictureUrl:
-      "https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372",
+      'https://i.scdn.co/image/adcf79a6adae4e1a44d0e34860cc103e28ee4372',
     votes: {
       count: 0,
-      userVoted: false
-    }
+      userVoted: false,
+    },
   },
   {
     id: 2,
-    name: "Purple Haze",
+    name: 'Purple Haze',
     duration: 229,
     priority: false,
-    artist: "Jimi Hendrix",
+    artist: 'Jimi Hendrix',
     adder: {
       id: 1,
-      name: "kant",
+      name: 'kant',
       pictureUrl:
-        "https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd"
+        'https://res.cloudinary.com/jukeo-net/image/upload/ano-b2_eezggd',
     },
     pictureUrl:
-      "https://i.scdn.co/image/1d55f445789ed89a1b8fab09c3dad117afb5fe80",
+      'https://i.scdn.co/image/1d55f445789ed89a1b8fab09c3dad117afb5fe80',
     votes: {
       count: 0,
-      userVoted: false
-    }
-  }
+      userVoted: false,
+    },
+  },
 ];
 
 export default trackList;

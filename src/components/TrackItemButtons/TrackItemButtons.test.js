@@ -28,12 +28,16 @@ describe('<TrackItemButtons>', () => {
       },
       toggleTrackPriority: jest.fn(),
       toggleUserVote: jest.fn(),
+      removeTrack: jest.fn(),
     };
   });
 
   it('should toggle track priority when clicking the button', () => {
     const tree = shallow(<TrackItemButtons {...props} />);
-    tree.find('Button').prop('onClick')();
+    tree
+      .find('Button')
+      .first()
+      .prop('onClick')();
     expect(props.toggleTrackPriority).toHaveBeenCalledWith(1);
   });
 
@@ -41,5 +45,14 @@ describe('<TrackItemButtons>', () => {
     const tree = shallow(<TrackItemButtons {...props} />);
     tree.find('VoteButton').prop('onClick')();
     expect(props.toggleUserVote).toHaveBeenCalledWith(1);
+  });
+
+  it('should toggle track priority when clicking the button', () => {
+    const tree = shallow(<TrackItemButtons {...props} />);
+    tree
+      .find('Button')
+      .last()
+      .prop('onClick')();
+    expect(props.removeTrack).toHaveBeenCalledWith(1);
   });
 });

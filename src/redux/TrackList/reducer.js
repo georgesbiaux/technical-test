@@ -5,6 +5,7 @@ import {
   TOGGLE_TRACK_PRIORITY,
   TOGGLE_USER_VOTE,
   ADD_TRACK,
+  REMOVE_TRACK,
 } from './constants';
 
 const initialState = fromJS({
@@ -38,6 +39,14 @@ export default function reducer(
   action: { type: string, payload: Object },
 ) {
   switch (action.type) {
+    case REMOVE_TRACK: {
+      const tracks = state.get('tracks').toJS();
+      const trackIndex = tracks.findIndex(track => track.id === action.trackId);
+
+      tracks.splice(trackIndex, 1);
+
+      return state.set('tracks', fromJS(tracks.sort(sortTracks)));
+    }
     case ADD_TRACK: {
       const tracks = state.get('tracks').toJS();
       tracks.push(action.track);

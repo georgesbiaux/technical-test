@@ -6,6 +6,7 @@ import StyledHome from './Home.style';
 export default class Home extends Component {
   componentWillMount() {
     this.props.addTrack(trackFictures[0]);
+    this.props.addTrack(trackFictures[1]);
   }
 
   render() {
@@ -14,5 +15,5 @@ export default class Home extends Component {
         <TrackList trackList={this.props.trackList} />
       </StyledHome>
     );
-  };
+  }
 }
