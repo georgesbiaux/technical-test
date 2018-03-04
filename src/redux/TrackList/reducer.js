@@ -46,6 +46,28 @@ const initialState = fromJS({
   ],
 });
 
+function sortTracks(trackA, trackB) {
+  if (trackA.priority && !trackB.priority) {
+    return -1;
+  } else if (trackB.priority && !trackA.priority) {
+    return 1;
+  }
+
+  if (trackA.votes.count > trackB.votes.count) {
+    return -1;
+  } else if (trackB.votes.count > trackA.votes.count) {
+    return 1;
+  }
+
+  if (trackA.id < trackB.id) {
+    return -1;
+  } else if (trackB.id < trackA.id) {
+    return 1;
+  }
+
+  return 0;
+}
+
 export default function reducer(
   state: Map<string, any> = initialState,
   action: { type: string, payload: Object },
@@ -57,7 +79,7 @@ export default function reducer(
 
       tracks[trackIndex].priority = !tracks[trackIndex].priority;
 
-      return state.set('tracks', fromJS(tracks));
+      return state.set('tracks', fromJS(tracks.sort(sortTracks)));
     }
     case TOGGLE_USER_VOTE: {
       const tracks = state.get('tracks').toJS();
@@ -69,7 +91,7 @@ export default function reducer(
 
       tracks[trackIndex].votes.count += 1;
 
-      return state.set('tracks', fromJS(tracks));
+      return state.set('tracks', fromJS(tracks.sort(sortTracks)));
     }
     default:
       return state;
