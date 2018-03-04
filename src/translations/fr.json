@@ -2,5 +2,10 @@
   "trackItem": {
     "addedBy": "Ajouté par {username}",
     "in": "dans {duration} min"
+  },
+  "emptyTrackList": {
+    "tracklist": "Tracklist",
+    "empty": "La tracklist est vide.",
+    "add": "Ajoutez des titres depuis la recherche."
   }
 }

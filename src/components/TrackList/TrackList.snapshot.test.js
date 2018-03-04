@@ -8,6 +8,7 @@ describe('<TrackList>', () => {
     const props = {
       trackList: [{
         id: 1,
+        duration: 500,
       }, {
         id: 2,
       }],

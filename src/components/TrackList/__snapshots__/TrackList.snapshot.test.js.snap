@@ -6,14 +6,17 @@ exports[`<TrackList> should render correctly 1`] = `
 >
   <TrackItem
     key="1"
+    timeBeforePlay={240}
     track={
       Object {
+        "duration": 500,
         "id": 1,
       }
     }
   />
   <TrackItem
     key="2"
+    timeBeforePlay={740}
     track={
       Object {
         "id": 2,

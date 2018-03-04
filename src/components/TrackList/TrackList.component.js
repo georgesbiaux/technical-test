@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrackItem } from 'components';
+import { TrackItem, EmptyTrackList } from 'components';
 import StyledTrackList from './TrackList.style';
 
 const TrackList = props => {
@@ -13,7 +13,11 @@ const TrackList = props => {
     return item;
   });
 
-  return <StyledTrackList className="track-list">{trackList}</StyledTrackList>;
+  return (
+    <StyledTrackList className="track-list">
+      {props.trackList.length > 0 ? trackList : <EmptyTrackList />}
+    </StyledTrackList>
+  );
 };
 
 export default TrackList;
