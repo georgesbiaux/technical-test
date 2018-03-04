@@ -3,5 +3,11 @@
 exports[`<Home> should render correctly 1`] = `
 <styled.div>
   <TrackList />
+  <div>
+    <Button
+      icon="fa-plus"
+      onClick={[Function]}
+    />
+  </div>
 </styled.div>
 `;

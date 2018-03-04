@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const StyledHome = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
   .track-list {
-    width: 1218px;
+    width: 600px;
   }
 `;
 

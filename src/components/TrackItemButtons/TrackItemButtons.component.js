@@ -14,11 +14,7 @@ const TrackItemButtons = props => (
       userVoted={props.track.votes.userVoted}
       onClick={() => props.toggleUserVote(props.track.id)}
     />
-    <Button
-      icon="fa-trash"
-      priority={props.track.priority}
-      onClick={() => props.removeTrack(props.track.id)}
-    />
+    <Button icon="fa-trash" onClick={() => props.removeTrack(props.track.id)} />
   </StyledTrackItemButtons>
 );
 
