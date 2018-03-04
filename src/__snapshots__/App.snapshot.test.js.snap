@@ -17,7 +17,7 @@ exports[`<App> should render correctly 1`] = `
   }
 >
   <BrowserRouter
-    basename="/"
+    basename="/technical-test"
   >
     <Route
       component={[Function]}

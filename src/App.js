@@ -19,7 +19,7 @@ class App extends React.Component<Props> {
   render() {
     return (
       <Provider store={this.props.store}>
-        <Router basename="/">
+        <Router basename="/technical-test">
           <Route path="/" component={RootComponentWithRoutes} />
         </Router>
       </Provider>
