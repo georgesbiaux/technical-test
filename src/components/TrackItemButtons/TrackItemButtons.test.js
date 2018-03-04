@@ -33,7 +33,7 @@ describe('<TrackItemButtons>', () => {
 
   it('should toggle track priority when clicking the button', () => {
     const tree = shallow(<TrackItemButtons {...props} />);
-    tree.find('PriorityButton').prop('onClick')();
+    tree.find('Button').prop('onClick')();
     expect(props.toggleTrackPriority).toHaveBeenCalledWith(1);
   });
 

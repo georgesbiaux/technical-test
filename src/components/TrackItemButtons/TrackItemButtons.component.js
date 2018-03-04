@@ -1,10 +1,11 @@
 import React from 'react';
-import { PriorityButton, VoteButton } from 'components';
+import { Button, VoteButton } from 'components';
 import StyledTrackItemButtons from './TrackItemButtons.style';
 
 const TrackItemButtons = props => (
   <StyledTrackItemButtons className="track-item-button">
-    <PriorityButton
+    <Button
+      icon="fa-bars"
       priority={props.track.priority}
       onClick={() => props.toggleTrackPriority(props.track.id)}
     />

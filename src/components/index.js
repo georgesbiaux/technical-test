@@ -12,7 +12,7 @@ export { default as TrackItemCover } from './TrackItemCover';
 export {
   default as TrackItemPriorityOverlay,
 } from './TrackItemPriorityOverlay';
-export { default as PriorityButton } from './PriorityButton';
+export { default as Button } from './Button';
 export { default as VoteButton } from './VoteButton';
 export { default as TrackItemButtons } from './TrackItemButtons';
 export { default as EmptyTrackList } from './EmptyTrackList';

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledPriorityButton = styled.button`
+const StyledButton = styled.button`
   border: 0;
   font-size: 22px;
   width: 70px;
@@ -26,4 +26,4 @@ const StyledPriorityButton = styled.button`
   }
 `;
 
-export default StyledPriorityButton;
+export default StyledButton;

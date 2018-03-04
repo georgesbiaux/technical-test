@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const StyledPriorityButton = styled.div`
+const StyledButton = styled.div`
   background-color: #fbfbfb;
 `;
 
-export default StyledPriorityButton;
+export default StyledButton;
