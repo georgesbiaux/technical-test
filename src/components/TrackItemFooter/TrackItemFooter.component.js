@@ -16,7 +16,7 @@ const TrackItemFooter = props => (
       <FormattedMessage
         id="trackItem.in"
         values={{
-          duration: 4,
+          duration: Math.ceil(props.timeBeforePlay / 60),
         }}
       />
     </div>

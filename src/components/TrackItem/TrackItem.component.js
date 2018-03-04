@@ -16,7 +16,10 @@ const TrackItem = props => (
         <TrackItemInfo track={props.track} />
         <TrackItemButtons track={props.track} />
       </div>
-      <TrackItemFooter track={props.track} />
+      <TrackItemFooter
+        track={props.track}
+        timeBeforePlay={props.timeBeforePlay}
+      />
     </div>
     {props.track.priority && <TrackItemPriorityOverlay />}
   </StyledTrackItem>
