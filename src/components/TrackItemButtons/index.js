@@ -1,1 +1,1 @@
-export { default } from './TrackItemButtons.component';
+export { default } from './TrackItemButtons.container';
