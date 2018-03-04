@@ -25,3 +25,11 @@ exports[`<TrackList> should render correctly 1`] = `
   />
 </styled.div>
 `;
+
+exports[`<TrackList> should render correctly when tracklist is empty 1`] = `
+<styled.div
+  className="track-list"
+>
+  <EmptyTrackList />
+</styled.div>
+`;

@@ -5,6 +5,9 @@ exports[`<Root> should render correctly 1`] = `
   locale="fr"
   messages={
     Object {
+      "emptyTrackList.add": "Ajoutez des titres depuis la recherche.",
+      "emptyTrackList.empty": "La tracklist est vide.",
+      "emptyTrackList.tracklist": "Tracklist",
       "trackItem.addedBy": "Ajouté par {username}",
       "trackItem.in": "dans {duration} min",
     }

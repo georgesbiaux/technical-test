@@ -1,5 +1,9 @@
-import { TOGGLE_TRACK_PRIORITY, TOGGLE_USER_VOTE } from './constants';
-import { toggleTrackPriority, toggleUserVote } from './actions';
+import {
+  TOGGLE_TRACK_PRIORITY,
+  TOGGLE_USER_VOTE,
+  ADD_TRACK,
+} from './constants';
+import { toggleTrackPriority, toggleUserVote, addTrack } from './actions';
 
 describe('TrackList actions', () => {
   describe('toggleTrackPriority', () => {
@@ -21,6 +25,17 @@ describe('TrackList actions', () => {
       };
 
       expect(toggleUserVote(42)).toEqual(expectedResult);
+    });
+  });
+
+  describe('addTrack', () => {
+    it('should return the correct type and payload', () => {
+      const expectedResult = {
+        type: ADD_TRACK,
+        track: { id: 42 },
+      };
+
+      expect(addTrack({ id: 42 })).toEqual(expectedResult);
     });
   });
 });

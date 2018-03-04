@@ -1,12 +1,19 @@
 import { fromJS } from 'immutable';
 import trackListReducer from './reducer';
-import { TOGGLE_TRACK_PRIORITY, TOGGLE_USER_VOTE } from './constants';
+import {
+  TOGGLE_TRACK_PRIORITY,
+  TOGGLE_USER_VOTE,
+  ADD_TRACK,
+} from './constants';
 
 describe('track list Reducer', () => {
   let previousState;
   beforeEach(() => {
     previousState = fromJS({
-      tracks: [{ id: 1 }],
+      tracks: [{
+        id: 1,
+        votes: {},
+      }],
     });
   });
 
@@ -22,6 +29,69 @@ describe('track list Reducer', () => {
     expect(trackListReducer(previousState, { type: 'dummy' })).toEqual(
       previousState,
     );
+  });
+
+  it('should add track and sort track list', () => {
+    expect(
+      trackListReducer(previousState, {
+        type: ADD_TRACK,
+        track: {
+          id: 2,
+          votes: {},
+        },
+      }),
+    ).toEqual(
+      fromJS({
+        tracks: [{
+          id: 1,
+          votes: {},
+        }, {
+          id: 2,
+          votes: {},
+        }],
+      }),
+    );
+
+    expect(
+      trackListReducer(previousState, {
+        type: ADD_TRACK,
+        track: {
+          id: 0,
+          votes: {},
+        },
+      }),
+    ).toEqual(
+      fromJS({
+        tracks: [{
+          id: 0,
+          votes: {},
+        }, {
+          id: 1,
+          votes: {},
+        }],
+      }),
+    );
+
+    expect(
+      trackListReducer(previousState, {
+        type: ADD_TRACK,
+        track: {
+          id: 1,
+          votes: {},
+        },
+      }),
+    ).toEqual(
+      fromJS({
+        tracks: [{
+          id: 1,
+          votes: {},
+        }, {
+          id: 1,
+          votes: {},
+        }],
+      }),
+    );
+
   });
 
   it('should toggle track priority and reorder track list', () => {

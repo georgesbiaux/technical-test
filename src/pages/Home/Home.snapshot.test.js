@@ -5,7 +5,9 @@ import Home from './Home.component';
 
 describe('<Home>', () => {
   it('should render correctly', () => {
-    const props = {};
+    const props = {
+      addTrack: () => {},
+    };
 
     const tree = shallow(<Home {...props} />);
     expect(toJSON(tree)).toMatchSnapshot();

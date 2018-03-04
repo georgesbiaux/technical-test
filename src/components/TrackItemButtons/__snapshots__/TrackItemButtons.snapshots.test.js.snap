@@ -2,7 +2,7 @@
 
 exports[`<TrackItemButtons> should render correctly 1`] = `
 <div
-  class="track-item-button sc-iwsKbI gzeYkZ"
+  class="track-item-button sc-gZMcBi iZyrSi"
 >
   <button
     class="priority-button sc-htoDjs esxIvP"

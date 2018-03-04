@@ -16,4 +16,12 @@ describe('<TrackList>', () => {
     const tree = shallow(<TrackList {...props} />);
     expect(toJSON(tree)).toMatchSnapshot();
   });
+
+  it('should render correctly when tracklist is empty', () => {
+    const props = {
+      trackList: [],
+    };
+    const tree = shallow(<TrackList {...props} />);
+    expect(toJSON(tree)).toMatchSnapshot();
+  });
 });
