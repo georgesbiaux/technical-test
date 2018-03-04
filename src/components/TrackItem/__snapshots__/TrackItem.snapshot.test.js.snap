@@ -34,7 +34,7 @@ exports[`<TrackItem> should render correctly when priority is false 1`] = `
           }
         }
       />
-      <TrackItemButtons
+      <Connect(Component)
         track={
           Object {
             "adder": Object {
@@ -115,7 +115,7 @@ exports[`<TrackItem> should render correctly when priority is true 1`] = `
           }
         }
       />
-      <TrackItemButtons
+      <Connect(Component)
         track={
           Object {
             "adder": Object {
