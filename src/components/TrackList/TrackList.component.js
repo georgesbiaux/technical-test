@@ -26,7 +26,10 @@ const TrackList = props => {
   return (
     <StyledTrackList
       className="track-list"
-      style={{ height: props.trackList.length * 81 }}
+      style={{
+        height:
+          props.trackList.length !== 0 ? props.trackList.length * 81 : 'auto',
+      }}
     >
       {props.trackList.length > 0 ? (
         <TransitionGroup className="track-list-transition-group">
