@@ -3,32 +3,92 @@
 exports[`<TrackList> should render correctly 1`] = `
 <styled.div
   className="track-list"
+  style={
+    Object {
+      "height": 162,
+    }
+  }
 >
-  <TrackItem
-    key="1"
-    timeBeforePlay={240}
-    track={
-      Object {
-        "duration": 500,
-        "id": 1,
+  <TransitionGroup
+    childFactory={[Function]}
+    className="track-list-transition-group"
+    component="div"
+  >
+    <CSSTransition
+      classNames="fade"
+      key="1"
+      timeout={250}
+      trackList={
+        Array [
+          Object {
+            "duration": 500,
+            "id": 1,
+          },
+          Object {
+            "id": 2,
+          },
+        ]
       }
-    }
-  />
-  <TrackItem
-    key="2"
-    timeBeforePlay={740}
-    track={
-      Object {
-        "id": 2,
+    >
+      <TrackItem
+        style={
+          Object {
+            "top": "0px",
+            "zIndex": 2,
+          }
+        }
+        timeBeforePlay={240}
+        track={
+          Object {
+            "duration": 500,
+            "id": 1,
+          }
+        }
+      />
+    </CSSTransition>
+    <CSSTransition
+      classNames="fade"
+      key="2"
+      timeout={250}
+      trackList={
+        Array [
+          Object {
+            "duration": 500,
+            "id": 1,
+          },
+          Object {
+            "id": 2,
+          },
+        ]
       }
-    }
-  />
+    >
+      <TrackItem
+        style={
+          Object {
+            "top": "81px",
+            "zIndex": 1,
+          }
+        }
+        timeBeforePlay={740}
+        track={
+          Object {
+            "id": 2,
+          }
+        }
+      />
+    </CSSTransition>
+  </TransitionGroup>
 </styled.div>
 `;
 
 exports[`<TrackList> should render correctly when tracklist is empty 1`] = `
 <styled.div
   className="track-list"
+  style={
+    Object {
+      "height": 0,
+    }
+  }
 >
   <EmptyTrackList />
 </styled.div>

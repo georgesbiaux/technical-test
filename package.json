@@ -37,26 +37,29 @@
     }
   },
   "dependencies": {
+    "immutable": "^3.8.2",
+    "plop": "^1.9.1",
+    "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "^1.1.0",
-    "prop-types": "^15.6.0",
     "react-intl": "^2.3.0",
-    "plop": "^1.9.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.0",
     "react-test-renderer": "^16.2.0",
+    "react-transition-group": "^2.2.1",
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
     "source-map-explorer": "^1.5.0",
     "styled-components": "3.1.16",
-    "whatwg-fetch": "^2.0.3",
-    "immutable": "^3.8.2"
+    "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
+    "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
+    "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.42.0",
@@ -69,8 +72,6 @@
     "flow-bin": "^0.65.0",
     "flow-coverage-report": "^0.4.1",
     "flow-typed": "^2.3.0",
-    "enzyme": "^3.3.0",
-    "eslint": "^4.17.0",
     "nsp": "^3.1.0",
     "prettier": "^1.10.2"
   }

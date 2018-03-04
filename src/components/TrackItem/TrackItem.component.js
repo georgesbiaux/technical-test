@@ -9,7 +9,7 @@ import {
 import StyledTrackItem from './TrackItem.style';
 
 const TrackItem = props => (
-  <StyledTrackItem className="track-item">
+  <StyledTrackItem className="track-item" style={props.style}>
     <TrackItemUserIcon pictureUrl={props.track.adder.pictureUrl} />
     <div className="track-container">
       <div className="track-row">
